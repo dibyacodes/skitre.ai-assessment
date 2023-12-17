@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.custom-gap-flex {
+    display: flex;
+    gap: 1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 40ch;
+}
+
+.main ul {
+    border: 1px solid;
+    box-shadow: 3px 3px 13px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.accordion-body {
+    max-width: 30ch;
+    padding-left: 2rem;
+}
+
+
+#floater {
+    display: none;
+}
+
+#opendialog .custom-button {
+    padding: 1rem 2rem 1rem 2rem;
+    display: flex;
+    align-items: center;
+    background-color: rgb(207, 241, 255);
+    color: blue;
+}
+
+.btn-secondary {
+    background-color: rgb(235, 235, 235);
+    color: black;
+}
+
+
+#glowbutton {
+    animation: glow alternate infinite 1s;
+    border-radius: 50%;
+}
+
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px -2px blue;
+    }
+
+    to {
+        box-shadow: 0 0 10px 2px blue;
+    }
+}

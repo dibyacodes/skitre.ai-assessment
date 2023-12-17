@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <div class="container mt-5 ">
+        <div onclick="floater()" id="opendialog">
+            <button class="btn btn-outline-primary fs-2 rounded-pill custom-button ">
+                Get Started
+            </button>
+        </div>
+    </div>
+
+
+    <div id="floater" class="main container justify-content-around">
+        <ul>
+            <li>
+                <h1 class="text-dark">
+                    <button onclick="closeFloater()" class="btn p-0 fs-5 font-weight-light ">
+                        <strong>Get started with loom</strong>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </button>
+                    <div class="progress mt-3">
+                        <div class="progress-bar w-75 "></div>
+                    </div>
+                </h1>
+            </li>
+            <li class="d-flex align-content-center flex-row ">
+                <button class="custom-gap-flex accordion-button p-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green"
+                        class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                    </svg>
+                    Create an account
+                </button>
+            </li>
+            <li>
+                <div class="accordion accordion-flush" id="checklist">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="check1">
+                            <button class="custom-gap-flex accordion-button p-3" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#checkitem1" aria-expanded="true" aria-controls="checkitem1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green"
+                                    class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                </svg>
+                                Download Loom
+                            </button>
+                        </h2>
+
+                        <div id="checkitem1" class="accordion-collapse collapse " data-bs-parent="#checklist">
+                            <div class="accordion-body d-flex flex-column">
+                                Install the Chrome extension to record from your browser and to unlock integrations like
+                                Gmail and Jira.
+
+                                <div class="d-flex flex-column ">
+                                    <button class="btn btn-outline-dark rounded-pill mt-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-browser-chrome" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M16 8a8.001 8.001 0 0 1-7.022 7.94l1.902-7.098a2.995 2.995 0 0 0 .05-1.492A2.977 2.977 0 0 0 10.237 6h5.511A8 8 0 0 1 16 8M0 8a8 8 0 0 0 7.927 8l1.426-5.321a2.978 2.978 0 0 1-.723.255 2.979 2.979 0 0 1-1.743-.147 2.986 2.986 0 0 1-1.043-.7L.633 4.876A7.975 7.975 0 0 0 0 8m5.004-.167L1.108 3.936A8.003 8.003 0 0 1 15.418 5H8.066a2.979 2.979 0 0 0-1.252.243 2.987 2.987 0 0 0-1.81 2.59ZM8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
+                                        </svg>
+                                        Install Chrome Extension
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="check2">
+                            <button class="text-primary-emphasis custom-gap-flex accordion-button p-3" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#checkitem2" aria-expanded="true"
+                                aria-controls="checkitem2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green"
+                                    class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                </svg>
+                                Record a video
+                            </button>
+                        </h2>
+
+                        <div id="checkitem2" class="accordion-collapse collapse" data-bs-parent="#checklist">
+                            <div class="accordion-body d-flex flex-column">
+                                Record a short video to share with your teammates. Try introducing yourself or replacing
+                                a meeting.
+
+                                <div class="d-flex">
+                                    <button class="btn btn-outline-dark rounded-pill mt-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-camera-video-fill" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2z" />
+                                        </svg>
+                                        Start Recording
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="check3">
+                            <button class="text-primary-emphasis custom-gap-flex accordion-button p-3" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#checkitem3" aria-expanded="true"
+                                aria-controls="checkitem3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green"
+                                    class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                </svg>
+                                Share your video
+                            </button>
+                        </h2>
+
+                        <div id="checkitem3" class="accordion-collapse collapse" data-bs-parent="#checklist">
+                            <div class="accordion-body d-flex flex-column">
+                                Now it's time to get some views. Try sharing your last video.
+                                <div class="d-flex">
+                                    <button class="btn btn-outline-dark rounded-pill mt-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                                            <path
+                                                d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
+                                            <path
+                                                d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
+                                        </svg>
+                                        Copy last video link
+                                    </button>
+                                </div>
+
+                                <div class="d-flex mt-2 align-items-center ">
+                                    <button class="btn rounded-pill">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                            <path
+                                                d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                        </svg>
+                                        Learn how to share
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="check4">
+                            <button class="text-primary-emphasis custom-gap-flex accordion-button p-3" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#checkitem4" aria-expanded="true"
+                                aria-controls="checkitem4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green"
+                                    class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                </svg>
+                                Get a view
+                            </button>
+                        </h2>
+
+                        <div id="checkitem4" class="accordion-collapse collapse" data-bs-parent="#checklist">
+                            <div class="accordion-body d-flex flex-column">
+                                Slack, message or email your viewers to remind them about your Loom.
+
+                                <div class="d-flex">
+                                    <button class="btn btn-secondary border-0  rounded-pill mt-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                            <path
+                                                d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                                        </svg>
+                                        Understand video engagement
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="check5">
+                            <button class="text-primary-emphasis custom-gap-flex accordion-button p-3" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#checkitem5" aria-expanded="true"
+                                aria-controls="checkitem5">
+                                <svg id="glowbutton" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                </svg>
+                                Invite a teammate
+                            </button>
+                        </h2>
+
+                        <div id="checkitem5" class="accordion-collapse collapse" data-bs-parent="#checklist">
+                            <div class="accordion-body d-flex flex-column">
+                                Invite your team to collaborate and share videos more easily.
+
+                                <div class="d-flex">
+                                    <button class="btn btn-outline-dark  rounded-pill mt-3 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-person-add" viewBox="0 0 16 16">
+                                            <path
+                                                d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
+                                            <path
+                                                d="M8.256 14a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1z" />
+                                        </svg>
+                                        Invites teammates
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+</body>
+<script src="js/bootstrap.js"></script>
+<script src="js/custom.js"></script>
+
+</html>
